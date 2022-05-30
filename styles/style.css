@@ -1,0 +1,469 @@
+@font-face {
+    font-family:Avenir Light;
+    src: url(../assets/fonts/AvenirLT35Light.ttf);
+    font-weight: 400;
+}
+
+
+:root{
+    --beage:#F4ECE1;
+    --orange: #FF7648;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-family: Avenir Light;
+
+    overflow-y: scroll;
+
+}
+
+h1, h2, h3, h4{
+    font-family: Amatic SC;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    min-height: 12vh;
+    background-color: #FFFFFF   ;
+
+    padding: 0 6vw;
+
+
+    position: fixed;
+    z-index: 9999;
+
+}
+
+#Logo > img{
+    max-width: 2rem;
+    transition: 0.4s;
+}
+
+
+#Logo > img:hover{
+    transform: scale(1.3);
+    background-color: var(--orange);
+}
+
+#Logo{
+    height: fit-content;
+    width: fit-content;
+
+}
+ #Logo:hover{
+    
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+
+ }
+
+/* Nav */
+
+nav{
+    display: flex;
+    gap: 2em;
+
+    
+    padding: 0 0 0.15em 1.25em;
+    
+}
+
+nav > a{
+    text-decoration: none;
+    color:#000000;
+
+
+    font-weight: 100;
+    transition: 0.4s;
+}
+
+#ColorOrange{
+    color: var(--orange)
+}
+
+nav > a:hover{
+    color: var(--orange);
+}
+
+
+#Telephone{
+    background-color: #000000;
+    align-self: flex-start;
+
+    padding: 1.2rem;
+
+    color: #FFFFFF;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    min-width: 6%;
+
+    background-color: #FFFFFF;
+    
+    right:0;
+
+    position: fixed;
+
+
+}
+
+
+/* First Section */
+
+
+#FirstSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
+    
+    
+    
+    background-color: var(--beage);
+    margin-left: 5% ;
+
+    min-width: 84%;
+
+    padding-top: 12vh;
+}
+
+#FirstSection span{
+    font-family: Amatic SC;
+    font-size: 15rem;
+
+    display: block;
+
+    font-weight: 400;
+}
+
+#ContentBlock{
+    display: flex;
+}
+
+
+
+#AnaDogSection{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    align-items: center;
+
+    margin: 8rem 0 6rem 0;
+}
+
+#AnaDogSection > img{
+    max-width: 5rem;
+
+    vertical-align: baseline;
+
+
+}
+
+
+.things{
+    max-width: 4rem;
+}
+
+.flipped{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#CuteDog{
+    position:absolute;
+    top: -3.5625rem;
+}
+
+
+
+#AnaDogSection > p{
+    
+    font-size: 1.438rem;
+    letter-spacing: 0.2em;
+}
+
+.Button {
+    padding: 1em 2.2em;
+
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: var(--orange);
+    border: none;
+
+    transition: 0.4s;
+    margin-top: 2em;
+
+    font: inherit;
+
+}
+
+.Round{
+    border-radius: 2em;
+
+}
+
+
+.Button:hover{
+    color:#000000;
+    cursor: pointer;
+}
+
+.pata{
+    position: absolute;
+    width: 2rem;
+}
+
+.one{
+    left: 63.125rem;
+    top: 28.875;
+    transform: rotate(45deg);
+}
+
+.two{
+    left: 60.6875rem;
+    top: 35.125rem;
+    transform: rotate(-35deg)
+}
+
+.three{
+    left: 64.125rem;
+    top: 41.5rem;
+}
+
+#ball{
+    position: absolute;
+    left: 5.375rem;
+    top:42.75rem;
+
+    width: 4rem;
+}
+
+/* Second Section */
+
+#SecondSection{
+    display: flex;
+
+    padding: 0 0 5rem 0;
+}
+
+
+
+#SecondSection h2{
+    font-family: Amatic SC;
+    font-size: 3.75rem;
+}
+
+#TextContainer{
+    max-width: 47ch;
+
+    margin: 6rem 9rem;
+}
+
+#TextContainer > p{
+    margin: 2em 0;
+}
+
+#AnaImgContainer{
+    align-self: flex-end;
+    justify-self: end;
+
+}
+
+
+#AnaImgContainer img{
+    max-width: 72%;
+
+}
+
+
+/* Third Section */
+
+#ScheduleWalkSection{
+    margin: 2rem 9rem;
+
+}
+
+#ScheduleWalkSection h2{
+    font-size: 3.75rem;
+
+}
+
+#ScheduleContainer{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 2rem 1rem;
+
+    background-color: var(--beage);
+
+    
+}
+
+#ScheduleContainer > img{
+    max-width: 55%;
+}
+
+#ScheduleContainer h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    margin: 0 2em 0.85em 2em;
+
+    padding-bottom: 1em;
+    border-bottom: #FFFFFF 1px solid;
+
+}
+
+#ScheduleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    padding-top: 3.5em;
+}
+
+#ScheduleContent ul{
+    font-size: 1.10rem;
+    line-height: 1.75em;
+}
+
+
+
+#Money{
+    padding: 0.5ch;
+}
+
+.White{
+    color:#000000;
+    background-color: #FFFFFF;
+
+    padding: 0.75em;
+}
+
+.White:hover{
+    background-color: #FFFFFF80;
+}
+
+.Wider{
+    padding: 1em 3em;
+    margin-left: 40%;
+}
+
+/* Fourth Section */
+
+#FourthSection h2{
+    font-size: 3.75rem;
+}
+
+
+
+/* Fifth Section */
+
+#ContactTitle{
+    display: flex;
+
+    padding: 3rem 9rem;
+    gap: 5rem;
+
+}
+
+#Email{
+    line-height: 3em;
+}
+
+#ContactTitle h2{
+    font-size: 3.75rem;
+}
+
+#ContactContainer{
+    display: flex;
+    justify-content: space-between;
+
+    position:relative;
+    
+    background-color: var(--beage);
+    margin-left: 5% ;
+
+    min-width: 84%;
+}
+
+#ListContainer{
+    display: flex;
+    flex-direction: column;
+
+    gap: 4em;
+    
+    
+    padding: 6em 4em;
+    max-width: 40ch;
+
+}
+
+#ListContainer li{
+    line-height: 2em;
+}
+
+#InputContainer{
+    padding: 6em 4em;
+}
+
+input{
+    display: block;
+    padding: 0.25em 10em 0 1.5em;
+}
+
+#fattie{
+    min-height: 10rem;
+
+}
+
+.Send{
+    padding: 0.5em 3em;
+}
+
+@keyframes example{
+    0% {transform: rotate(none);}
+    10% {transform: rotate(0);}
+    20% {transform: rotate(0);}
+    30% {transform: rotate(6deg);}
+    40% {transform: rotate(12deg);}
+    50% {transform: rotate(18deg);}
+    60% {transform: rotate(24deg);}
+    70% {transform: rotate(30deg);}
+    80% {transform: rotate(36deg);}
+    90% {transform: rotate(42deg);}
+    100% {transform: rotate(48deg);}
+}
